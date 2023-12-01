@@ -1,0 +1,307 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "matterhornReg", sans-serif;
+}
+
+@font-face {
+    font-family: "matterhornReg";
+    src: url("/Fonts/matterhorn-2.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "matterhornBold";
+    src: url("/Fonts/matterhorn-6.ttf") format("truetype");
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Header part*/
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header a:hover{
+    color: #0077DA;
+}
+
+.header img{
+    padding: 1em;
+    width: 10em;
+}
+
+nav ul li{
+    display:inline;
+    justify-content: flex-end;
+    padding-left: 2em;
+    padding-right: 1em;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/*Banner part*/
+
+.banner{
+    padding-top: 15px;
+    position: relative;
+    height: 850px;
+    width: 100%;
+}
+
+.wishBan{
+    width:100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.wishText{
+    width: 20%;
+    position: relative;
+    z-index: 2;
+    top: 182px;
+    left: 40%;
+}
+
+.banner p{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    left: 44%;
+    top: 550px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*Buttons on the banner*/
+
+.banner button{
+    position: absolute;
+    z-index: 2;
+    border-radius: 25px;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.banner button a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.reservation{
+    background-color: #F2BC4F;
+    position: absolute;
+    z-index: 2;
+    left: 33%;
+    border-style: none;
+    top: 590px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color:black;
+}
+
+.reservation:hover{
+    background-color: #DFAD49;
+    cursor: pointer;
+}
+
+.knowMore{
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
+    color:white;
+    position: absolute;
+    z-index: 2;
+    left: 51%;
+    top: 590px;
+    border: 1px solid;
+    border-color: white;
+    padding-top: 19px;
+    padding-bottom: 14px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.knowMore:hover{
+    background-color:rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+/*Disney property advertisements under the banner*/
+
+.disneyAds{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.adBox{
+    max-width: 21%;
+    color: black;
+    display: inline-flex;
+    margin-left: 3%;
+}
+
+.adBox img{
+    width: 100%;
+}
+
+.adBox p{
+    color: black;
+    letter-spacing: 1px;
+}
+
+.firstLine{
+    margin-top: 20px;
+    font-weight: 300px;
+    font-size: 25px;
+}
+
+.secondLine{
+    margin-top: 10px;
+    height: 85px;
+}
+
+.thirdLine{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/*On Disney+ part*/
+
+.onDisney{
+    margin-top: 90px;
+    padding-top: 45px;
+    padding-bottom: 50px;
+    background-color: #030C40;
+    max-width: 100%;
+}
+
+.onDisPlusTxt{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 35px;
+    max-width: 100%;
+}
+
+.onDisneyPlus{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.onDisneyPlus div{
+    display: inline;
+    max-width: 28%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.onDisneyPlus img{
+    width: 100%;
+}
+
+.onDisneyPlus div a{
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logos{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.logos img{
+    width: 55%;
+}
+
+/*Subscribe button*/
+
+.subButton{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.subscription{
+    background-color: #006EF5;
+    border-style: none;
+    border-radius: 25px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 70px;
+    padding-right: 70px;
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.subscription:hover{
+    background-color: #0065E2;
+    cursor: pointer;
+}
+
+/*Terms and conditions*/
+
+.conditions{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 25px;
+}
+
+/*Bottom half of the page*/
+
+.bottom{
+    margin-top: 50px;
+}
+
+.shops{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.shopsBanner{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 100%;
+
+}
+
+.shopsBanner a{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    width: 88%;
+}
+
+.shopsBannerImage{
+    position: absolute;
+    width: 88%;
+    z-index: 1;
+}
+
